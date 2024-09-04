@@ -8,20 +8,20 @@
 /* 第一區 */
 .App_header {
   min-height: 100vh;
-  width:50%;
+  width: 50%;
   color: rgb(0, 0, 0);
   text-align: center;
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
 }
-.box_left{
+.box_left {
   width: 50%;
 }
-.box_left img{
+.box_left img {
   margin-top: 2em;
 }
-.page_1_card{
+.page_1_card {
   width: 17em;
   height: 20em;
   display: flex;
@@ -30,28 +30,41 @@
   justify-content: center;
   box-shadow: rgba(14, 192, 77, 0.501) 0px 5px 15px;
 }
-.personalPhoto{
+.personalPhoto {
   width: 200px;
-	border-radius: 50%;
+  border-radius: 50%;
   display: flex;
-	aspect-ratio: 1 / 1;
-	background-image: url("../../public/img/personPhtp.jpg");
-	background-size: cover;
-	background-position: center;
+  aspect-ratio: 1 / 1;
+  background-image: url("../../public/img/personPhtp.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-
 /* 第二區 */
-.page_2_skill{
+.page_2_skill {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.skills{
+.page_2_skill h1 {
+  margin: 3em 0;
+  text-align: center;
+}
+.skills {
+  width: 50%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.skills p{
-
+.skills p {
+  background: #39c447;
+  border-radius: 8em;
+  padding: 1em;
+  margin: 0 2em;
+  color: #ffffff;
+  box-shadow: rgba(74, 120, 155, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 /* Enable hover only on non-touch devices */

@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
-import Image from 'next/image';
-import gitLogo from '../../public/img/gitLogo.svg';
-import personalPhoto from '../../public/img/personPhtp.jpg'
+import Image from "next/image";
+import gitLogo from "../../public/img/gitLogo.svg";
+import personalPhoto from "../../public/img/personPhtp.jpg";
 
 export default function Home() {
   return (
@@ -20,17 +20,17 @@ export default function Home() {
           <a href='https://github.com/Gray3325'>https://github.com/Gray3325</a>
         </div>
         <div className={styles.page_1_card}>
-          <div className={styles.personalPhoto}>
-          </div>
+          <div className={styles.personalPhoto}></div>
           <p>Yun-Jou Lai</p>
         </div>
       </header>
       <div className={styles.page_2_skill}>
         {/* [ ]  第二頁 */}
-        <div>{/* TODO 標題 */}
-          <h1>Skills</h1>
-        </div>
-        <div className={styles.skills}>{/* TODO 放技能的地方 */}
+
+        <h1 className=''>Skills</h1>
+
+        <div className={styles.skills}>
+          {/* TODO 放技能的地方 */}
           <p>React</p>
           <p>Bootstrap</p>
           <p>Fimga</p>

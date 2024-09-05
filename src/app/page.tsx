@@ -44,7 +44,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.page_3_education}>
-        {/*[ ] 第三頁 學歷部分 */}
+        {/*[x] 第三頁 學歷部分 */}
         <h1>Education</h1>
         <div className={styles.education}>
           {/* 分左右兩邊 */}
@@ -61,6 +61,29 @@ export default function Home() {
               UNIVERSITY
             </p>
             <Image src={stuLogo} alt='SHU-TE University Logo' />
+          </div>
+        </div>
+      </div>
+      <div className={styles.page_4_experience}>
+        {/* [ ] 第四區 經驗部分 */}
+        <h1>Work Experience</h1>
+        <hr className={styles.verticalLine} />{/* 垂直的時間軸 */}
+        <div className={styles.experience}>
+          {/* 分成三塊 */}
+          <div className={styles.leftLine}>
+            <p>Administrative assistant (Seven months)</p>
+            <hr />
+          </div>
+          <div className={styles.rightLine}>
+            <hr />
+            <p>PHP assistant engineer (Two months)</p>
+          </div>
+          <div className={styles.leftLine}>
+            <p>
+              Amateur community managers, Amateur graphic designers, Amateur
+              product developers (Four years)
+            </p>
+            <hr />
           </div>
         </div>
       </div>

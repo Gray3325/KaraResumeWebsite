@@ -34,7 +34,7 @@ export default function Home() {
           {/* 放技能的地方 */}
           <p>React</p>
           <p>Bootstrap</p>
-          <p>Fimga</p>
+          <p>Figma</p>
           <p>Javascript</p>
           <p>CSS</p>
           <p>HTML</p>

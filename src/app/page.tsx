@@ -1,7 +1,8 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import gitLogo from "../../public/img/gitLogo.svg";
-import personalPhoto from "../../public/img/personPhtp.jpg";
+import ispanLogo from "../../public/img/Logoslogan_sm.png";
+import stuLogo from "../../public/img/stulogo500px.png";
 
 export default function Home() {
   return (
@@ -45,7 +46,23 @@ export default function Home() {
       <div className={styles.page_3_education}>
         {/*[ ] 第三頁 學歷部分 */}
         <h1>Education</h1>
-        
+        <div className={styles.education}>
+          {/* 分左右兩邊 */}
+          <div>
+            <p>
+              Graduated from Front-end engineer employment development class
+              ,iSpan International Inc.
+            </p>
+            <Image src={ispanLogo} alt='ispan Logo' />
+          </div>
+          <div>
+            <p>
+              Graduated from the Department of Animation and Game Design ,SHU-TE
+              UNIVERSITY
+            </p>
+            <Image src={stuLogo} alt='SHU-TE University Logo' />
+          </div>
+        </div>
       </div>
     </main>
   );

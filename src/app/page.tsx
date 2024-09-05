@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <header className={styles.App_header}>
-        {/* [x] 第一頁 */}
+        {/* [x] 第一頁 打招呼 */}
         <div className={styles.box_left}>
           <h1>Hello</h1>
           <p>
@@ -25,12 +25,12 @@ export default function Home() {
         </div>
       </header>
       <div className={styles.page_2_skill}>
-        {/* [ ]  第二頁 */}
+        {/* [x] 第二頁 技能部分 */}
 
-        <h1 className=''>Skills</h1>
+        <h1>Skills</h1>
 
         <div className={styles.skills}>
-          {/* TODO 放技能的地方 */}
+          {/* 放技能的地方 */}
           <p>React</p>
           <p>Bootstrap</p>
           <p>Fimga</p>
@@ -41,6 +41,11 @@ export default function Home() {
           <p>Node</p>
           <p>GitHub</p>
         </div>
+      </div>
+      <div className={styles.page_3_education}>
+        {/*[ ] 第三頁 學歷部分 */}
+        <h1>Education</h1>
+        
       </div>
     </main>
   );

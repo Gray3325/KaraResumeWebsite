@@ -5,39 +5,25 @@
   align-items: center;
   background-color: #ffffff;
   color: #62b620;
-  width: 80vw;
-}
-/* 第一區 打招呼 */
-.App_header {
-  min-height: 100vh;
-  /* width: 50%; */
-  /* color: rgb(0, 0, 0); */
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  /* position: relative; */
 }
 
-.h1Class{
-  color:#ffffff;
-  text-shadow:-2px 2px 0 #92E34E;
-  -webkit-text-stroke:1px #92E34E;
-  /* filter: drop-shadow(-0.05em 0.05em #92E34E); */
-}
-.box_left img {
-  margin-top: 2em;
-}
-.page_1_card {
-  width: 17em;
-  height: 20em;
+/* 右側導覽 */
+.rightNavbar {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: rgba(14, 192, 77, 0.501) 0px 5px 15px;
+  position: fixed;
+  right: 5%;
+  top: 15%;
+  width: 15em;
+  height: 30em;
+  border-radius: 6em;
+  box-shadow: -1em 0 0em 0.01em #92e34e;
 }
 .personalPhoto {
-  width: 200px;
+  width: 150px;
   border-radius: 50%;
   display: flex;
   aspect-ratio: 1 / 1;
@@ -45,6 +31,65 @@
   background-size: cover;
   background-position: center;
 }
+
+/* 按鈕 */
+.navBtn {
+	color: #6dc228;
+	transition: all 0.5s;
+	position: relative;
+  margin-top: 1em;
+}
+.navBtn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: #ffffff72;
+	transition: all 0.3s;
+}
+.navBtn:hover::before {
+	opacity: 0 ;
+	transform: scale(0.5,0.5);
+}
+.navBtn::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border: 1px solid #90ff36a8;
+	transform: scale(1.2,1.2);
+}
+.navBtn:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
+}
+
+/* 第一區 打招呼 */
+.App_header {
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.h1Class {
+  color: #ffffff;
+  text-shadow: -2px 2px 0 #92e34e;
+  -webkit-text-stroke: 1px #92e34e;
+}
+.box_left img {
+  margin-top: 2em;
+}
+
 
 /* 第二區 技能部分 */
 .page_2_skill {
@@ -141,16 +186,16 @@
   align-items: center;
 }
 
-.leftLine{
-margin: 4em 0 4em 0;
+.leftLine {
+  margin: 4em 0 4em 0;
 }
-.lineHr{
+.lineHr {
   color: #62b620;
   background: #62b620;
   height: 0.5vh;
   width: 30%;
 }
-.rightLine{
+.rightLine {
   display: flex;
   flex-direction: row-reverse;
   margin: 4em 0 4em 50%;

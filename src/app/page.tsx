@@ -3,13 +3,24 @@ import Image from "next/image";
 import gitLogo from "../../public/img/gitLogo.svg";
 import ispanLogo from "../../public/img/Logoslogan_sm.png";
 import stuLogo from "../../public/img/stulogo500px.png";
+import { NavBtn } from "./navButton";
 import { Content } from "./context";
 import { AddLine } from "./addLine";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <header className={styles.App_header}>
+      <div className={styles.rightNavbar}>
+        <div className={styles.personalPhoto} />
+        <h1 className={styles.h1Class}>Yun-Jou Lai</h1>
+        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
+        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
+        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
+        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
+        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
+        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
+      </div>
+      <header className={styles.App_header} id='sayHi'>
         {/* [x] 第一頁 打招呼 */}
 
         <div>
@@ -19,9 +30,8 @@ export default function Home() {
           <br />
           <a href='https://github.com/Gray3325'>https://github.com/Gray3325</a>
         </div>
-       
       </header>
-      <div className={styles.page_2_skill}>
+      <div className={styles.page_2_skill} id='skills'>
         {/* [x] 第二頁 技能部分 */}
 
         <h1 className={styles.h1Class}>Skills</h1>
@@ -39,7 +49,7 @@ export default function Home() {
           <p>GitHub</p>
         </div>
       </div>
-      <div className={styles.page_3_education}>
+      <div className={styles.page_3_education} id='education'>
         {/*[x] 第三頁 學歷部分 */}
         <h1 className={styles.h1Class}>Education</h1>
 
@@ -61,7 +71,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className={styles.page_4_experience}>
+      <div className={styles.page_4_experience} id='experience'>
         {/* [ ] 第四區 經驗部分 */}
         <h1 className={styles.h1Class}>Work Experience</h1>
 

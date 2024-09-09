@@ -3,13 +3,15 @@ import Image from "next/image";
 import gitLogo from "../../public/img/gitLogo.svg";
 import ispanLogo from "../../public/img/Logoslogan_sm.png";
 import stuLogo from "../../public/img/stulogo500px.png";
+import { TitleH1 } from "./title";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <header className={styles.App_header}>
         {/* [x] 第一頁 打招呼 */}
-        <div className={styles.box_left}>
+        
+        {/* <div className={styles.box_left}>
           <h1>Hello</h1>
 
           <p>
@@ -20,7 +22,7 @@ export default function Home() {
           <Image src={gitLogo} alt='githubLogo' width={40} />
           <br />
           <a href='https://github.com/Gray3325'>https://github.com/Gray3325</a>
-        </div>
+        </div> */}
         <div className={styles.page_1_card}>
           <div className={styles.personalPhoto}></div>
           <p>Yun-Jou Lai</p>
@@ -69,7 +71,7 @@ export default function Home() {
       <div className={styles.page_4_experience}>
         {/* [ ] 第四區 經驗部分 */}
         <h1>Work Experience</h1>
-        
+
         <hr className={styles.verticalLine} />{/* 垂直的時間軸 */}
         <div className={styles.experience}>
           {/* 分成三塊 */}

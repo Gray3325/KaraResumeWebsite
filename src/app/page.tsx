@@ -11,6 +11,7 @@ export default function Home() {
         {/* [x] 第一頁 打招呼 */}
         <div className={styles.box_left}>
           <h1>Hello</h1>
+
           <p>
             I’m Yun-Jou Lai
             <br />
@@ -46,6 +47,7 @@ export default function Home() {
       <div className={styles.page_3_education}>
         {/*[x] 第三頁 學歷部分 */}
         <h1>Education</h1>
+
         <div className={styles.education}>
           {/* 分左右兩邊 */}
           <div>
@@ -67,6 +69,7 @@ export default function Home() {
       <div className={styles.page_4_experience}>
         {/* [ ] 第四區 經驗部分 */}
         <h1>Work Experience</h1>
+        
         <hr className={styles.verticalLine} />{/* 垂直的時間軸 */}
         <div className={styles.experience}>
           {/* 分成三塊 */}

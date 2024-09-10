@@ -3,32 +3,36 @@ import Image from "next/image";
 import gitLogo from "../../public/img/gitLogo.svg";
 import ispanLogo from "../../public/img/Logoslogan_sm.png";
 import stuLogo from "../../public/img/stulogo500px.png";
+import { NavBtn } from "./navButton";
+import { Content } from "./context";
+import { AddLine } from "./addLine";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <header className={styles.App_header}>
+      <div className={styles.rightNavbar}>
+        <div className={styles.personalPhoto} />
+        <h1 className={styles.h1Class}>Yun-Jou Lai</h1>
+        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
+        <NavBtn text='Skills' textClass={styles.navBtn} href='#skills' />
+        <NavBtn text='Education' textClass={styles.navBtn} href='#education' />
+        <NavBtn text='Experience' textClass={styles.navBtn} href='#experience' />
+      </div>
+      <header className={styles.App_header} id='sayHi'>
         {/* [x] 第一頁 打招呼 */}
-        <div className={styles.box_left}>
-          <h1>Hello</h1>
-          <p>
-            I’m Yun-Jou Lai
-            <br />
-            This is my resume
-          </p>
+
+        <div>
+          <h1 className={styles.h1Class}>Hello</h1>
+          <Content text1='I’m Yun-Jou Lai' text2='This is my resume' />
           <Image src={gitLogo} alt='githubLogo' width={40} />
           <br />
           <a href='https://github.com/Gray3325'>https://github.com/Gray3325</a>
         </div>
-        <div className={styles.page_1_card}>
-          <div className={styles.personalPhoto}></div>
-          <p>Yun-Jou Lai</p>
-        </div>
       </header>
-      <div className={styles.page_2_skill}>
+      <div className={styles.page_2_skill} id='skills'>
         {/* [x] 第二頁 技能部分 */}
 
-        <h1>Skills</h1>
+        <h1 className={styles.h1Class}>Skills</h1>
 
         <div className={styles.skills}>
           {/* 放技能的地方 */}
@@ -43,48 +47,52 @@ export default function Home() {
           <p>GitHub</p>
         </div>
       </div>
-      <div className={styles.page_3_education}>
+      <div className={styles.page_3_education} id='education'>
         {/*[x] 第三頁 學歷部分 */}
-        <h1>Education</h1>
+        <h1 className={styles.h1Class}>Education</h1>
+
         <div className={styles.education}>
           {/* 分左右兩邊 */}
-          <div>
-            <p>
-              Graduated from Front-end engineer employment development class
-              ,iSpan International Inc.
-            </p>
-            <Image src={ispanLogo} alt='ispan Logo' />
-          </div>
-          <div>
-            <p>
-              Graduated from the Department of Animation and Game Design ,SHU-TE
-              UNIVERSITY
-            </p>
-            <Image src={stuLogo} alt='SHU-TE University Logo' />
-          </div>
+
+          <Content
+            text1='Graduated from Front-end engineer employment development class
+              ,iSpan International Inc.'
+            imgUrl={ispanLogo}
+            imgAlt='ispan Logo'
+          />
+
+          <Content
+            text1='Graduated from the Department of Animation and Game Design ,SHU-TE
+              UNIVERSITY'
+            imgUrl={stuLogo}
+            imgAlt='SHU-TE University Logo'
+          />
         </div>
       </div>
-      <div className={styles.page_4_experience}>
+      <div className={styles.page_4_experience} id='experience'>
         {/* [ ] 第四區 經驗部分 */}
-        <h1>Work Experience</h1>
-        <hr className={styles.verticalLine} />{/* 垂直的時間軸 */}
+        <h1 className={styles.h1Class}>Work Experience</h1>
+
+        <hr className={styles.verticalLine} />
+        {/* 垂直的時間軸 */}
         <div className={styles.experience}>
           {/* 分成三塊 */}
-          <div className={styles.leftLine}>
-            <p>Administrative assistant (Seven months)</p>
-            <hr />
-          </div>
-          <div className={styles.rightLine}>
-            <hr />
-            <p>PHP assistant engineer (Two months)</p>
-          </div>
-          <div className={styles.leftLine}>
-            <p>
-              Amateur community managers, Amateur graphic designers, Amateur
-              product developers (Four years)
-            </p>
-            <hr />
-          </div>
+          <AddLine
+            text='Administrative assistant (Seven months)'
+            Class={styles.leftLine}
+            hrClass={styles.lineHr}
+          />
+          <AddLine
+            text='PHP assistant engineer (Two months)'
+            Class={styles.rightLine}
+            hrClass={styles.lineHr}
+          />
+          <AddLine
+            text='Amateur community managers, Amateur graphic designers, Amateur
+              product developers'
+            Class={styles.leftLine}
+            hrClass={styles.lineHr}
+          />
         </div>
       </div>
     </main>

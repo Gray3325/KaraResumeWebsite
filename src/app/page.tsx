@@ -14,11 +14,9 @@ export default function Home() {
         <div className={styles.personalPhoto} />
         <h1 className={styles.h1Class}>Yun-Jou Lai</h1>
         <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
-        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
-        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
-        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
-        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
-        <NavBtn text='Introduce' textClass={styles.navBtn} href='#sayHi' />
+        <NavBtn text='Skills' textClass={styles.navBtn} href='#skills' />
+        <NavBtn text='Education' textClass={styles.navBtn} href='#education' />
+        <NavBtn text='Experience' textClass={styles.navBtn} href='#experience' />
       </div>
       <header className={styles.App_header} id='sayHi'>
         {/* [x] 第一頁 打招呼 */}

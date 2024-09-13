@@ -70,9 +70,9 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.page_4_experience} id='experience'>
-        {/* [ ] 第四區 經驗部分 */}
+        {/* [x] 第四區 經驗部分 */}
         <h1 className={styles.h1Class}>Work Experience</h1>
-
+  
         <hr className={styles.verticalLine} />
         {/* 垂直的時間軸 */}
         <div className={styles.experience}>

@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# [myWeb](https://gray3325.github.io/myResumeWebsite/)
+![截圖 2024-09-15 晚上7.19.07](https://hackmd.io/_uploads/SkbiEBVpA.png)
+![截圖 2024-09-15 晚上7.19.23](https://hackmd.io/_uploads/rJZs4BVa0.png)
+![截圖 2024-09-15 晚上7.19.41](https://hackmd.io/_uploads/BJbjES4TR.png)
+![截圖 2024-09-15 晚上7.19.54](https://hackmd.io/_uploads/B1-oVBVaC.png)
+
+
 ## Getting Started
 
 First, run the development server:
@@ -34,5 +41,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# [myWeb](https://gray3325.github.io/myResumeWebsite/)
+
 

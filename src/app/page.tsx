@@ -35,7 +35,6 @@ export default function Home() {
         <h1 className={styles.h1Class}>Skills</h1>
 
         <div className={styles.skills}>
-          {/* 放技能的地方 */}
           <p>React</p>
           <p>Bootstrap</p>
           <p>Figma</p>

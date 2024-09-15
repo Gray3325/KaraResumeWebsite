@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# [myWeb](https://gray3325.github.io/myResumeWebsite/)
+# [myWeb](https://gray3325.github.io/KaraResumeWebsite/)
 ![截圖 2024-09-15 晚上7.19.07](https://hackmd.io/_uploads/SkbiEBVpA.png)
 ![截圖 2024-09-15 晚上7.19.23](https://hackmd.io/_uploads/rJZs4BVa0.png)
 ![截圖 2024-09-15 晚上7.19.41](https://hackmd.io/_uploads/BJbjES4TR.png)
